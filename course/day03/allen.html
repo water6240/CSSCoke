@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap {
+                display: flex;
+                flex-direction: column;
+                width: 175px;
+                padding: 0 20px;
+            }
+            .img {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .discount {
+                font-size: 14px;
+                font-weight: 400;
+                color: red;
+                padding: 20px 6px 0;
+            }
+
+            .product-name {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+            .price {
+                font-size: 24px;
+                color: #d62872;
+                padding-bottom: 2px;
+            }
+            .dollar-sign {
+                font-size: 14px;
+                padding: 0 2px;
+            }
+            .price .note {
+                font-size: 14px;
+                font-weight: 300;
+                padding: 0 8px;
+                color: #4f4f4f;
+            }
+            .sales {
+                font-size: 14px;
+                color: #0b0b0b;
+            }
+            .icon-area {
+                background-color: #eeeeee;
+                height: 26px;
+                text-align: right;
+                margin: 1px auto 0px;
+                padding: 0px 5px;
+                overflow: hidden;
+                white-space: nowrap;
+                color: #fff;
+            }
+            .icon-area i {
+                font: 12px/15px Helvetica;
+                margin: 1px;
+                padding: 2px 4px;
+                border-radius: 3px;
+            }
+            i.icon-fast {
+                background-color: #be0211;
+            }
+            i.icon-register {
+                background-color: #ff4c76;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrap">
+                <div class="img">
+                    <img src="https://picsum.photos/160/160/?random=10" />
+                </div>
+                <div>
+                    <div>
+                        <h4 class="discount">滿1件折901</h4>
+                        <p class="product-name">【Apple 蘋果】iPhone 13 128G(6.1吋)</p>
+                    </div>
+                    <div class="price">
+                        <span class="dollar-sign">$</span>23,999<span class="note">(售價已折)</span>
+                    </div>
+                    <div><p class="sales">總銷量>8,000</p></div>
+                    <p class="icon-area">
+                        <i class="icon-fast">速</i><i class="icon-register">登記</i>
+                    </p>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="img">
+                    <img src="https://picsum.photos/160/160/?random=100" />
+                </div>
+                <div>
+                    <div>
+                        <h4 class="discount">滿1件折901</h4>
+                        <p class="product-name">【Apple 蘋果】iPhone 13 128G(6.1吋)</p>
+                    </div>
+                    <div class="price">
+                        <span class="dollar-sign">$</span>23,999<span class="note">(售價已折)</span>
+                    </div>
+                    <div><p class="sales">總銷量>8,000</p></div>
+                    <p class="icon-area">
+                        <i class="icon-fast">速</i><i class="icon-register">登記</i>
+                    </p>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="img">
+                    <img src="https://picsum.photos/160/160/?random=11" />
+                </div>
+                <div>
+                    <div>
+                        <h4 class="discount">滿1件折901</h4>
+                        <p class="product-name">【Apple 蘋果】iPhone 13 128G(6.1吋)</p>
+                    </div>
+                    <div class="price">
+                        <span class="dollar-sign">$</span>23,999<span class="note">(售價已折)</span>
+                    </div>
+                    <div><p class="sales">總銷量>8,000</p></div>
+                    <p class="icon-area">
+                        <i class="icon-fast">速</i><i class="icon-register">登記</i>
+                    </p>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="img">
+                    <img src="https://picsum.photos/160/160/?random=12" />
+                </div>
+                <div>
+                    <div>
+                        <h4 class="discount">滿1件折901</h4>
+                        <p class="product-name">【Apple 蘋果】iPhone 13 128G(6.1吋)</p>
+                    </div>
+                    <div class="price">
+                        <span class="dollar-sign">$</span>23,999<span class="note">(售價已折)</span>
+                    </div>
+                    <div><p class="sales">總銷量>8,000</p></div>
+                    <p class="icon-area">
+                        <i class="icon-fast">速</i><i class="icon-register">登記</i>
+                    </p>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="img">
+                    <img src="https://picsum.photos/160/160/?random=13" />
+                </div>
+                <div>
+                    <div>
+                        <h4 class="discount">滿1件折901</h4>
+                        <p class="product-name">【Apple 蘋果】iPhone 13 128G(6.1吋)</p>
+                    </div>
+                    <div class="price">
+                        <span class="dollar-sign">$</span>23,999<span class="note">(售價已折)</span>
+                    </div>
+                    <div><p class="sales">總銷量>8,000</p></div>
+                    <p class="icon-area">
+                        <i class="icon-fast">速</i><i class="icon-register">登記</i>
+                    </p>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="img">
+                    <img src="https://picsum.photos/160/160/?random=14" />
+                </div>
+                <div>
+                    <div>
+                        <h4 class="discount">滿1件折901</h4>
+                        <p class="product-name">【Apple 蘋果】iPhone 13 128G(6.1吋)</p>
+                    </div>
+                    <div class="price">
+                        <span class="dollar-sign">$</span>23,999<span class="note">(售價已折)</span>
+                    </div>
+                    <div><p class="sales">總銷量>8,000</p></div>
+                    <p class="icon-area">
+                        <i class="icon-fast">速</i><i class="icon-register">登記</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
